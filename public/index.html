@@ -2,10 +2,65 @@
 <html lang="UTF-8">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlify</title>
+    <title>Apeiron</title>
     <link rel="stylesheet" href="build/tailwind.css">
+    <style>
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        ::-webkit-scrollbar-track{
+            background: #2D3748;
+        }
+        ::-webkit-scrollbar-thumb{
+            background: #CBD5E0;
+        }
+        ::-webkit-scrollbar-thumb:hover{
+            background: #718096;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="font-sans">
+    <nav class="bg-white border-b-2 border-blue-600 w-full">
+        <div class="flex flex-col container mx-auto px-6 py-4 md:flex-row md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a class="text-blue-600 text-xl font-bold md:text-2xl" href="#">Apeiron</a>
+                </div>
+                <div>
+                    <button type="button" class="block text-gray-700 hover:text-gray-600 focus:text-gray-600 focus:outline-none md:hidden">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col hidden md:block md:flex-row md:items-center">
+                <a class="my-1 text-gray-600 text-sm hover:text-blue-600 md:mx-4 md:my-0" href="#">Home</a>
+                <a class="my-1 text-gray-600 text-sm hover:text-blue-600 md:mx-4 md:my-0" href="#">Jobs</a>
+                <a class="my-1 text-gray-600 text-sm hover:text-blue-600 md:mx-4 md:my-0" href="#">Contact</a>
+                <a class="my-1 text-gray-600 text-sm hover:text-blue-600 md:ml-4 md:my-0" href="#">About us</a>
+                <a class="my-1 py-2 px-3 bg-blue-600 text-white rounded md:ml-4 text-sm hover:bg-blue-500 font-bold" href="#">Freelancer</a>
+                <a class="my-1 py-2 px-3 bg-gray-200 text-blue-600 rounded md:ml-4 text-sm hover:bg-gray-100 font-bold" href="#">Post a job</a>
+            </div>
+        </div>
+    </nav>
+    <header class="flex flex-col items-center container mx-auto px-6 py-6 md:py-12 md:flex-row">
+        <div class="w-full md:mr-4 md:w-1/2">
+            <h2 class="text-2xl font-semibold text-blue-600 md:text-3xl capitalize">Start your new project now</h2>
+            <img class="md:hidden my-4" src="img/undraw_digital_nomad_9kgl.svg" alt="illistration">
+            <p class="mt-2 text-sm text-gray-500 md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quos atque velit minima numquam sunt aliquam eaque dolor, dolorem voluptatibus blanditiis doloribus animi nostrum repellat neque est, perspiciatis temporibus illum!</p>
+            <div class="flex mt-6">
+                <a class="py-2 px-3 bg-blue-600 text-white rounded text-sm hover:bg-blue-500 font-bold" href="#">Freelancer</a>
+                <a class="py-2 px-3 bg-gray-200 text-blue-600 rounded mx-4 text-sm hover:bg-gray-300 font-bold" href="#">Post a job</a>
+            </div>
+        </div>
+        <div class="w-full mt-10 hidden md:block md:mt-0 md:w-1/2">
+            <img src="img/undraw_digital_nomad_9kgl.svg" alt="illistration">
+        </div>
+    </header>
+
+    <footer class="py-3 text-center bg-blue-800 text-gray-100">
+        © 2020 Apeiron, Inc. Design By <a class="text-blue-300 hover:text-blue-200" href="https://twitter.com/khatabwedaa">khatabwedaa</a>
+    </footer>
 </body>
 </html>
